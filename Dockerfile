@@ -32,6 +32,10 @@ ENV LD_LIBRARY_PATH /opt/oracle/instantclient:$LD_LIBRARY_PATH
 
 # Create app directory
 RUN mkdir -p /usr/projects
+
+ADD projects/oracle-test /usr/projects/oracle-test
+RUN cd /usr/projects/oracle-test && npm install
+
 WORKDIR /usr/projects
 
 # [END all]
