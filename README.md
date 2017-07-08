@@ -45,7 +45,7 @@ Running locally a Cloud App that in its turn call a service also running locally
 ### Run the container exposing 8001
 
 ```
-docker run -p=8001:8001 -it --rm -v $(pwd)/projects:/usr/projects --name $CONTAINER_NAME $PROJECT_ID/$IMAGE_NAME:$IMAGE_VERSION /bin/bash
+docker run -p=8001:8001 -it --rm -v $(pwd)/projects:/usr/projects --name $CONTAINER_NAME $PROJECT_ID/$IMAGE_NAME:$IMAGE_VERSION
 ```
 
 ### Running the service in background
